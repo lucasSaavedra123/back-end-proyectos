@@ -1,11 +1,19 @@
 {
   "name": "api-rest",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.11.1"
+    },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./index.js",
-    "start": "node index.js"
+    //"dev": "nodemon ./index.js",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
