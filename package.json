@@ -6,8 +6,8 @@
     },
   "description": "",
   "main": "index.js",
+  "_comment": "dev debe ser = a:nodemon ./index.js",
   "scripts": {
-    //"dev": "nodemon ./index.js",
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
