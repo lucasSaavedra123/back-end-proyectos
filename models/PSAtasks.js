@@ -4,7 +4,7 @@ var mongoose = require("mongoose"),
   Schema = mongoose.Schema,
   autoIncrement = require('mongoose-auto-increment');
 
-var connection = mongoose.createConnection("mongodb://127.0.0.1/PSAProject");
+var connection = mongoose.createConnection(process.env.DATABASE_URL);
 autoIncrement.initialize(connection);
   
 var taskSchema = new Schema({
