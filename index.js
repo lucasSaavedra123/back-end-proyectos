@@ -28,7 +28,7 @@ const tasksRouter = require('./routes/tasksRoutes')
 app.use('/projects', projectsRouter)
 app.use('/tasks',tasksRouter)
 
-app.listen(2000, () => console.log('Node server running'))
+app.listen(process.env.PORT || 2000, () => console.log('Node server running'))
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: false}))
